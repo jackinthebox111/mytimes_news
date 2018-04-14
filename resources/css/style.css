@@ -1,0 +1,207 @@
+/*My Times CSS*/
+
+/*-----------------------------------------------------*/
+/*body*/
+
+body {
+  margin: 0px;
+}
+/*-----------------------------------------------------*/
+/*header*/
+
+.header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid black;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0px;
+  background-color: white;
+}
+
+.logo-text {
+  max-width: 200px;
+  display: inline-flex;
+}
+
+.header p {
+  color: MediumAquamarine;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.logo {
+  height: 60px;
+  width: 70px;
+  padding-left: 20px;
+}
+
+.navigation {
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.navigation li {
+  display: inline-block;
+  width: 60px;
+  padding: 5px;
+  text-align: left;
+  text-decoration: underline;
+  color: black;
+  flex-wrap: wrap;
+}
+/*-----------------------------------------------------*/
+/*content*/
+
+.main-content.container {
+  padding-top: 160px;
+  /*border: 1px solid black; to visulise container boundaries*/
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px 100px 15px;
+}
+/*-----------------------------------------------------*/
+/*three content columns*/
+
+.column {
+  margin-right: 30px;
+  /*border: 1px solid black; to visualise content containers*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.column.large {
+  width: 630px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+/*-----------------------------------------------------*/
+/*content containers*/
+
+.story-content, .image-content {
+  /*border: 1px solid black; this line of code is used to visualise the space
+  the content containers take up on the web page*/
+  min-height: 250px;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 630px;
+}
+
+.sub-content.left, .sub-content.right {
+  width: 300px;
+}
+
+/*text - image content or text/story content*/
+
+.image-content .headline {
+  margin: 0px;
+  text-align: center;
+}
+
+.image-content.main .headline {
+  text-align: left;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.image-content {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  /*text-align: center;*/
+  color: white;
+  display: flex;
+  min-height: 300px;
+  min-width: 299px;
+  background-repeat: no-repeat;
+}
+/*-----------------------------------------------------*/
+/*image content background images*/
+
+.image-content.main {
+  background-image: url(../images/img-story-main.png);
+  font-size: 40px;
+}
+.image-content.earth {
+  background-image: url(../images/img-story-2.png);
+}
+.image-content.camera {
+  background-image: url(../images/img-story-3.png);
+}
+.image-content.cat {
+  background-image: url(../images/img-story-1.png);
+}
+/*-----------------------------------------------------*/
+/*News Bites*/
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bite {
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+/*-----------------------------------------------------*/
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.my.times {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding: 0px 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 100px;
+}
